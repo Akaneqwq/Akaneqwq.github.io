@@ -9,11 +9,11 @@ publications.forEach((publication) => {
   result += `<picture>\n`;
   if (publication.img) {
     result += `<source srcset="/media/${publication.img.replace(
-      /\.(png|jpg)/i,
+      /\.(png|jpe?g)/i,
       ".avif"
     )}" type="image/avif" />\n`;
     result += `<source srcset="/media/${publication.img.replace(
-      /\.(png|jpg)/i,
+      /\.(png|jpe?g)/i,
       ".webp"
     )}" type="image/webp" />\n`;
     result += `<img src="/media/${publication.img}" width="180" height="140" alt="${publication.title}" />\n`;
