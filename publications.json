@@ -1,0 +1,162 @@
+[
+    {
+        "img": "NTIRE2023.png",
+        "title": "NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results",
+        "authors": [
+            {
+                "name": "Mingdeng Cao"
+            },
+            {
+                "name": "et al."
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "et al."
+            },
+            {
+                "name": "Bingchun Luo"
+            }
+        ],
+        "venue": "CVPR Workshop, 2023",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Cao_NTIRE_2023_Challenge_on_360deg_Omnidirectional_Image_and_Video_Super-Resolution_CVPRW_2023_paper.html"
+            }
+        ],
+        "desc": "We develop a spatial-temporal two-stage model, wherein the first stage is a 4x image super-resolution network, and the second stage is a 4x video super-resolution network."
+    },
+    {
+        "img": "CVPR2023-PCFF.png",
+        "title": "Panoptic Compositional Feature Field for Editable Scene Rendering with Network-Inferred Labels via Metric Learning",
+        "authors": [
+            {
+                "name": "Xinhua Cheng",
+                "link": "https://cxh0519.github.io/"
+            },
+            {
+                "name": "Yanmin Wu",
+                "link": "https://github.com/yanmin-wu"
+            },
+            {
+                "name": "Mengxi Jia",
+                "link": "https://mxjia.github.io/"
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Jian Zhang",
+                "link": "https://jianzhang.tech/"
+            }
+        ],
+        "venue": "CVPR, 2023",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://openaccess.thecvf.com/content/CVPR2023/html/Cheng_Panoptic_Compositional_Feature_Field_for_Editable_Scene_Rendering_With_Network-Inferred_CVPR_2023_paper.html"
+            }
+        ],
+        "desc": "We introduce metric learing for leveraging 2D network-inferred labels to obtain discriminating feature fields, leading to 3D segmentation and editing results."
+    },
+    {
+        "img": "CVPR2022-DGUNet.png",
+        "title": "Deep Generalized Unfolding Networks for Image Restoration",
+        "authors": [
+            {
+                "name": "Chong Mou",
+                "link": "https://github.com/MC-E"
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Jian Zhang",
+                "link": "https://jianzhang.tech/"
+            }
+        ],
+        "venue": "CVPR, 2022",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://openaccess.thecvf.com/content/CVPR2022/html/Mou_Deep_Generalized_Unfolding_Networks_for_Image_Restoration_CVPR_2022_paper.html"
+            },
+            {
+                "name": "Code",
+                "link": "https://github.com/MC-E/Deep-Generalized-Unfolding-Networks-for-Image-Restoration"
+            }
+        ],
+        "desc": "We integrate a gradient estimation strategy into the gradient descent step of the Proximal Gradient Descent algorithm, driving it to deal with complex real-world image degradation."
+    },
+    {
+        "img": "ACMMM2022-MSDPA.png",
+        "title": "More is better: Multi-source Dynamic Parsing Attention for Occluded Person Re-identification",
+        "authors": [
+            {
+                "name": "Xinhua Cheng*",
+                "link": "https://cxh0519.github.io/"
+            },
+            {
+                "name": "Mengxi Jia*",
+                "link": "https://mxjia.github.io/"
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Jian Zhang",
+                "link": "https://jianzhang.tech/"
+            }
+        ],
+        "withEqualContribution": true,
+        "venue": "ACM MM, 2022",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://dl.acm.org/doi/abs/10.1145/3503161.3547819"
+            }
+        ],
+        "desc": "We introduce the multi-source knowledge ensemble in occluded re-ID to effective leverage external semantic cues learned from different domains."
+    },
+    {
+        "img": "TCSVT2022-VTB.png",
+        "title": "A Simple Visual-Textual Baseline for Pedestrian Attribute Recognition",
+        "authors": [
+            {
+                "name": "Xinhua Cheng*",
+                "link": "https://cxh0519.github.io/"
+            },
+            {
+                "name": "Mengxi Jia*",
+                "link": "https://mxjia.github.io/"
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Jian Zhang",
+                "link": "https://jianzhang.tech/"
+            }
+        ],
+        "withEqualContribution": true,
+        "venue": "TCSVT, 2022",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://ieeexplore.ieee.org/document/9588887"
+            },
+            {
+                "name": "Code",
+                "link": "https://github.com/cxh0519/VTB"
+            }
+        ],
+        "desc": "We model pedestrian attribute recognition as a multimodal problem and build a simple visual-textual baseline to captures the intra- and cross-modal correlations."
+    }
+]
