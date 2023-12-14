@@ -1,394 +1,315 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-  <meta name="google-site-verification" content="xDNWUvx6Q5EWK5YYSyKvK8DZTmvXhKsGX203Ll-BFFE" >	
-  <meta name=viewport content=“width=800”>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <style type="text/css">
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300);
-  /* @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons); */
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-    /*color: #b60a1c;*/
-    color: #1772d0;
-    /*color: #bd0a36;*/
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    }
-    strong {
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    /*font-family: 'Avenir Next';*/
-    font-size: 15px;
-    font-weight: 400;
-    }
-    heading {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
-    font-size: 24px;
-    font-weight: 400;
-    }
-    papertitle {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
-    font-size: 15px;
-    font-weight:500;
-    }
-    name {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    font-weight: 400;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 140px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
-    }
-    br {
-            display: block; /* makes it have a width */
-            content: ""; /* clears default height */
-            margin-top: 5; /* change this to whatever height you want it */
-    }
-  </style>
-  <!-- <link rel="icon" type="image/png" href="media/preview.jpg"> -->
-  <title>Qian Wang - Homepage</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <script src="script/functions.js"></script>
+    <title>Qian Wang - Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Qian Wang's homepage" />
+    <link rel="icon" href="/media/favicon.ico" />
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
+      html {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        max-width: 100%;
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        min-width: 375px;
+      }
+      a {
+        text-decoration: none;
+        color: #1772d0;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #f09228;
+      }
+      header {
+        font-size: 15px;
+        min-height: 273px;
+        padding: 20px;
+        margin: 8px 20px;
+        padding-right: 220px;
+        position: relative;
+      }
+      header > picture {
+        position: absolute;
+        width: 200px;
+        height: 273px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      @media (max-width: 540px) {
+        header {
+          padding-right: 0;
+        }
+        header > picture {
+          position: static;
+          display: block;
+          margin: auto;
+        }
+      }
+      .self-intro-name {
+        padding: 14px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+      }
+      .self-intro-links {
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .publication {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .publication p {
+        margin: 0;
+      }
+      .publication > picture {
+        float: left;
+        object-fit: contain;
+        margin-right: 20px;
+        overflow: hidden;
+      }
+      .publication > picture > img {
+        transition: transform ease-in-out .3s;
+      }
+      .publication > picture > img:hover {
+        transform: scale(1.1);
+      }
+      .publication .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .publication .authors {
+        margin-bottom: 5px;
+      }
+      .publication .venue {
+        margin-bottom: 5px;
+      }
+      .publication .links {
+        margin-bottom: 5px;
+      }
+      .publication .authors .self {
+        font-weight: 400;
+      }
+      .publication .link::before {
+        content: "[";
+      }
+      .publication .link::after {
+        content: "]";
+      }
+      .publication .link {
+        margin-right: 3px;
+      }
+      .publication .desc {
+        margin-top: 14px;
+        font-size: 14px;
+      }
+      footer {
+        text-align: right;
+        padding: 20px;
+        font-size: 13px;
+      }
+    </style>
   </head>
-
-  <body><table width="800" border="0" align="center" cellspacing="0" cellpadding="0"><tr><td>
-  <!-- Biography -->
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td width="70%" valign="middle">
-      <p align="center">
-        <name>Qian Wang (王 茜)</name>
-      </p>
-      <p>
-        I am a master student at the School of Electronic and Computer Engineering, 
-        <a href="https://www.pku.edu.cn/">Peking University</a> Shenzhen Graduate School, 
-        advised by <a href="https://jianzhang.tech/">Prof. Jian Zhang</a>. 
-        I received the B.E. degree from the College of Computer Science, 
-        <a href="https://www.scu.edu.cn/">Sichuan University</a>, in 2022.
-      </p>
-      <p>
-        My research interest includes image restoration, image/video generation and image/video editing.
-      </p>
-
-      <p align=center>
-        <a href="mailto:qianwang@stu.pku.edu.cn">Email</a> &nbsp;|&nbsp;
-        <a href="https://scholar.google.com/citations?user=YQ4ECikAAAAJ">Google Scholar</a> &nbsp;|&nbsp;
-        <a href="https://github.com/akaneqwq/">GitHub</a>
-      </p>
-    </td>
-    <td width="30%">
-      <img src="media/IDPhoto.JPG" width="200" alt="headshot">
-    </td>
-  </tr>
-  </table>
-
-  <!-- Logo -->
-  <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td width="10%" valign="middle">
-      <a href="https://ethz.ch/en.html"><img src="media/eth_logo.png" width="120"></a>
-    </td>
-  </tr>
-  </table> -->
-  
-  <!-- News -->
-  <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td>
-      <heading>News</heading>
-        <ul>
-          <li><strong>10/2022</strong> Invited to give a talk on large-scale scene reconstruction with NeRF at <a href="https://www.computationalimaging.org/">Stanford University</a> (<a href="files/talk_stanford.pdf">Slides</a>). </li>
-          <li><strong>09/2022</strong> Our paper <a href="https://niujinshuchong.github.io/monosdf/"><strong>MonoSDF</strong></a> is accepted to <strong>NeurIPS 2022</strong>. </li>
-        </ul>
-    </td>
-  </tr>
-  </table> -->
-
-  <!-- Publications -->
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tr>
-      <td colspan="2">
-        <heading>Publications</heading>
-      </td>
-    </tr>
-
-    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
-      <td width="25%">
-        <div class="one">
-        <!-- <div class="two" id = 'openscene_shape'>
-        <video  width="160" height="100" muted autoplay loop>
-            <source src="media/openscene_teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video></div> -->
-        <img src='media/NTIRE2023.png' width="180" height="140"></div>
-        <script type="text/javascript">
-        function openscene_start() { 
-        document.getElementById('openscene_shape').style.opacity = "1";
-        }
-        function openscene_stop() { 
-        document.getElementById('openscene_shape').style.opacity = "0"; 
-        }
-        openscene_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle>
-          NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results
-        </papertitle>
-        <br>
-        Mingdeng Cao, 
-        et al.,
-        <strong>Qian Wang</strong>,
-        et al.,
-        Bingchun Luo
-        <br>
-        CVPR Workshop, 2023
-        <br>
-        [<a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Cao_NTIRE_2023_Challenge_on_360deg_Omnidirectional_Image_and_Video_Super-Resolution_CVPRW_2023_paper.html">Paper</a>]
-        <p style="font-size: 14px;">
-          We develop a spatial-temporal two-stage model, 
-          wherein the first stage is a 4x image super-resolution network, 
-          and the second stage is a 4x video super-resolution network.
+  <body>
+    <header>
+      <div class="self-intro-name">Qian Wang (王茜)</div>
+      <picture>
+        <source srcset="/media/IDPhoto.avif" type="image/avif" />
+        <img width="200" height="273" src="/media/IDPhoto.JPG" alt="ID Photo" />
+      </picture>
+      <div>
+        <p>
+          I am a master student at the School of Electronic and Computer Engineering,
+          <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a>
+          Shenzhen Graduate School, advised by
+          <a href="https://jianzhang.tech/" target="_blank">Prof. Jian Zhang</a>.
+          I received the B.E. degree from the College of Computer Science,
+          <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>, in 2022.
         </p>
-      </td>
-    </tr>
-    
-
-    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
-      <td width="25%">
-        <div class="one">
-        <!-- <div class="two" id = 'openscene_shape'>
-        <video  width="160" height="100" muted autoplay loop>
-            <source src="media/openscene_teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video></div> -->
-        <img src='media/CVPR2023-PCFF.png' width="180" height="140"></div>
-        <script type="text/javascript">
-        function openscene_start() { 
-        document.getElementById('openscene_shape').style.opacity = "1";
-        }
-        function openscene_stop() { 
-        document.getElementById('openscene_shape').style.opacity = "0"; 
-        }
-        openscene_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle>
-          Panoptic Compositional Feature Field for Editable Scene Rendering with Network-Inferred Labels via Metric Learning
-        </papertitle>
-        <br>
-        <a href="https://cxh0519.github.io/">Xinhua Cheng</a>,
-        <a href="https://github.com/yanmin-wu">Yanmin Wu</a> 
-        <a href="https://mxjia.github.io/">Mengxi Jia</a>, 
-        <strong>Qian Wang</strong>, 
-        <a href="https://jianzhang.tech/">Jian Zhang</a>
-        <br>
-        CVPR, 2023
-        <br>
-        [<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Cheng_Panoptic_Compositional_Feature_Field_for_Editable_Scene_Rendering_With_Network-Inferred_CVPR_2023_paper.html">Paper</a>]
-        <p style="font-size: 14px;">
-          We introduce metric learing for leveraging 2D network-inferred labels 
-          to obtain discriminating feature fields, leading to 3D segmentation and editing results.
+        <p>
+          My research interest includes image restoration, image/video generation and image/video editing.
         </p>
-      </td>
-    </tr>
-    
-    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
-      <td width="25%">
-        <div class="one">
-        <!-- <div class="two" id = 'openscene_shape'>
-        <video  width="160" height="100" muted autoplay loop>
-            <source src="media/openscene_teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video></div> -->
-        <img src='media/CVPR2022-DGUNet.png' width="180" height="140"></div>
-        <script type="text/javascript">
-        function openscene_start() { 
-        document.getElementById('openscene_shape').style.opacity = "1";
-        }
-        function openscene_stop() { 
-        document.getElementById('openscene_shape').style.opacity = "0"; 
-        }
-        openscene_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle>
-          Deep Generalized Unfolding Networks for Image Restoration
-        </papertitle>
-        <br>
-        <a href="https://github.com/MC-E">Chong Mou</a>,
-        <strong>Qian Wang</strong>, 
-        <a href="https://jianzhang.tech/">Jian Zhang</a>
-        <br>
-        CVPR, 2022
-        <br>
-        [<a href="https://ieeexplore.ieee.org/abstract/document/9878586">Paper</a>]
-        [<a href="https://github.com/MC-E/Deep-Generalized-Unfolding-Networks-for-Image-Restoration">Code</a>]
-        <p style="font-size: 14px;">
-          We integrate a gradient estimation strategy into the gradient descent step of the Proximal Gradient Descent algorithm, 
-          driving it to deal with complex real-world image degradation.
-        </p>
-      </td>
-    </tr>
+        <div class="self-intro-links">
+          <a href="mailto:qianwang@stu.pku.edu.cn">Email</a>
+          &nbsp;|&nbsp;
+          <a href="https://scholar.google.com/citations?user=YQ4ECikAAAAJ" target="_blank">Google Scholar</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/akaneqwq/" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Publications</h1>
 
-    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
-      <td width="25%">
-        <div class="one">
-        <!-- <div class="two" id = 'openscene_shape'>
-        <video  width="160" height="100" muted autoplay loop>
-            <source src="media/openscene_teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video></div> -->
-        <img src='media/ACMMM2022-MSDPA.png' width="180" height="140"></div>
-        <script type="text/javascript">
-        function openscene_start() { 
-        document.getElementById('openscene_shape').style.opacity = "1";
-        }
-        function openscene_stop() { 
-        document.getElementById('openscene_shape').style.opacity = "0"; 
-        }
-        openscene_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle>
-          More is better: Multi-source Dynamic Parsing Attention for Occluded Person Re-identification
-        </papertitle>
-        <br>
-        <a href="https://cxh0519.github.io/">Xinhua Cheng*</a>, 
-        <a href="https://mxjia.github.io/">Mengxi Jia*</a>, 
-        <strong>Qian Wang</strong>, 
-        <a href="https://jianzhang.tech/">Jian Zhang</a> (* equal contribution)
-        <br>
-        ACM MM, 2022
-        <br>
-        [<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547819">Paper</a>]
-        <p style="font-size: 14px;">
-          We introduce the multi-source knowledge ensemble in occluded re-ID 
-          to effective leverage external semantic cues learned from different domains.
-        </p>
-      </td>
-    </tr>
+<div class="publication">
+<picture>
+<source srcset="/media/NTIRE2023.avif" type="image/avif" />
+<source srcset="/media/NTIRE2023.webp" type="image/webp" />
+<img src="/media/NTIRE2023.png" width="180" height="140" alt="NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results" />
+</picture>
+<div>
+<p class="title">NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results</p>
+<div class="authors">
+Mingdeng Cao,
+et al.,
+Qian Wang,
+et al.,
+Bingchun Luo</div>
+<p class="venue">CVPR Workshop, 2023</p>
+<div class="links">
+<span class="link">
+<a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Cao_NTIRE_2023_Challenge_on_360deg_Omnidirectional_Image_and_Video_Super-Resolution_CVPRW_2023_paper.html" target="_blank">
+Paper
+</a>
+</span>
+</div>
+<p class="desc">
+We develop a spatial-temporal two-stage model, wherein the first stage is a 4x image super-resolution network, and the second stage is a 4x video super-resolution network.
+</p>
+</div>
+</div>
 
-    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
-      <td width="25%">
-        <div class="one">
-        <!-- <div class="two" id = 'openscene_shape'>
-        <video  width="160" height="100" muted autoplay loop>
-            <source src="media/openscene_teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video></div> -->
-        <img src='media/TCSVT2022-VTB.png' width="180" height="140"></div>
-        <script type="text/javascript">
-        function openscene_start() { 
-        document.getElementById('openscene_shape').style.opacity = "1";
-        }
-        function openscene_stop() { 
-        document.getElementById('openscene_shape').style.opacity = "0"; 
-        }
-        openscene_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle>
-          A Simple Visual-Textual Baseline for Pedestrian Attribute Recognition
-        </papertitle>
-        <br>
-        <a href="https://cxh0519.github.io/">Xinhua Cheng*</a>, 
-        <a href="https://mxjia.github.io/">Mengxi Jia*</a>, 
-        <strong>Qian Wang</strong>, 
-        <a href="https://jianzhang.tech/">Jian Zhang</a> (* equal contribution)
-        <br>
-        TCSVT, 2022
-        <br>
-        [<a href="https://ieeexplore.ieee.org/document/9782406">Paper</a>]
-        [<a href="https://github.com/cxh0519/VTB">Code</a>]
-        <p style="font-size: 14px;">
-          We model pedestrian attribute recognition as a multimodal problem and 
-          build a simple visual-textual baseline to captures the intra- and cross-modal correlations.
-        </p>
-      </td>
-    </tr>
+<div class="publication">
+<picture>
+<source srcset="/media/CVPR2023-PCFF.avif" type="image/avif" />
+<source srcset="/media/CVPR2023-PCFF.webp" type="image/webp" />
+<img src="/media/CVPR2023-PCFF.png" width="180" height="140" alt="Panoptic Compositional Feature Field for Editable Scene Rendering with Network-Inferred Labels via Metric Learning" />
+</picture>
+<div>
+<p class="title">Panoptic Compositional Feature Field for Editable Scene Rendering with Network-Inferred Labels via Metric Learning</p>
+<div class="authors">
+<a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng</a>,
+<a href="https://github.com/yanmin-wu" target="_blank">Yanmin Wu</a>,
+<a href="https://mxjia.github.io/" target="_blank">Mengxi Jia</a>,
+Qian Wang,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+<p class="venue">CVPR, 2023</p>
+<div class="links">
+<span class="link">
+<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Cheng_Panoptic_Compositional_Feature_Field_for_Editable_Scene_Rendering_With_Network-Inferred_CVPR_2023_paper.html" target="_blank">
+Paper
+</a>
+</span>
+</div>
+<p class="desc">
+We introduce metric learing for leveraging 2D network-inferred labels to obtain discriminating feature fields, leading to 3D segmentation and editing results.
+</p>
+</div>
+</div>
 
-  </table>
+<div class="publication">
+<picture>
+<source srcset="/media/CVPR2022-DGUNet.avif" type="image/avif" />
+<source srcset="/media/CVPR2022-DGUNet.webp" type="image/webp" />
+<img src="/media/CVPR2022-DGUNet.png" width="180" height="140" alt="Deep Generalized Unfolding Networks for Image Restoration" />
+</picture>
+<div>
+<p class="title">Deep Generalized Unfolding Networks for Image Restoration</p>
+<div class="authors">
+<a href="https://github.com/MC-E" target="_blank">Chong Mou</a>,
+Qian Wang,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+<p class="venue">CVPR, 2022</p>
+<div class="links">
+<span class="link">
+<a href="https://openaccess.thecvf.com/content/CVPR2022/html/Mou_Deep_Generalized_Unfolding_Networks_for_Image_Restoration_CVPR_2022_paper.html" target="_blank">
+Paper
+</a>
+</span>
+<span class="link">
+<a href="https://github.com/MC-E/Deep-Generalized-Unfolding-Networks-for-Image-Restoration" target="_blank">
+Code
+</a>
+</span>
+</div>
+<p class="desc">
+We integrate a gradient estimation strategy into the gradient descent step of the Proximal Gradient Descent algorithm, driving it to deal with complex real-world image degradation.
+</p>
+</div>
+</div>
 
-  <!-- Footer -->
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td>
-    <br>
-    <p align="right">
-      <font size="2">
-      Template is adapted from <a href="https://jonbarron.info/"><font size="2">Here</font></a>
-      <br>
+<div class="publication">
+<picture>
+<source srcset="/media/ACMMM2022-MSDPA.avif" type="image/avif" />
+<source srcset="/media/ACMMM2022-MSDPA.webp" type="image/webp" />
+<img src="/media/ACMMM2022-MSDPA.png" width="180" height="140" alt="More is better: Multi-source Dynamic Parsing Attention for Occluded Person Re-identification" />
+</picture>
+<div>
+<p class="title">More is better: Multi-source Dynamic Parsing Attention for Occluded Person Re-identification</p>
+<div class="authors">
+<a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng*</a>,
+<a href="https://mxjia.github.io/" target="_blank">Mengxi Jia*</a>,
+Qian Wang,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a> (* equal contribution)
+</div>
+<p class="venue">ACM MM, 2022</p>
+<div class="links">
+<span class="link">
+<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547819" target="_blank">
+Paper
+</a>
+</span>
+</div>
+<p class="desc">
+We introduce the multi-source knowledge ensemble in occluded re-ID to effective leverage external semantic cues learned from different domains.
+</p>
+</div>
+</div>
+
+<div class="publication">
+<picture>
+<source srcset="/media/TCSVT2022-VTB.avif" type="image/avif" />
+<source srcset="/media/TCSVT2022-VTB.webp" type="image/webp" />
+<img src="/media/TCSVT2022-VTB.png" width="180" height="140" alt="A Simple Visual-Textual Baseline for Pedestrian Attribute Recognition" />
+</picture>
+<div>
+<p class="title">A Simple Visual-Textual Baseline for Pedestrian Attribute Recognition</p>
+<div class="authors">
+<a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng*</a>,
+<a href="https://mxjia.github.io/" target="_blank">Mengxi Jia*</a>,
+Qian Wang,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a> (* equal contribution)
+</div>
+<p class="venue">TCSVT, 2022</p>
+<div class="links">
+<span class="link">
+<a href="https://ieeexplore.ieee.org/document/9588887" target="_blank">
+Paper
+</a>
+</span>
+<span class="link">
+<a href="https://github.com/cxh0519/VTB" target="_blank">
+Code
+</a>
+</span>
+</div>
+<p class="desc">
+We model pedestrian attribute recognition as a multimodal problem and build a simple visual-textual baseline to captures the intra- and cross-modal correlations.
+</p>
+</div>
+</div>
+
+    </main>
+    <footer>
+      Template is adapted from
+      <a href="https://jonbarron.info/" target="_blank">jonbarron.info</a><br />
       Last updated: Dec 2023
-    </font>
-    </p>
-    </td>
-  </tr>
-  </table>
-
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-  </script> <script type="text/javascript">
-  try {
-      var pageTracker = _gat._getTracker("UA-116734954-1");
-      pageTracker._trackPageview();
-      } catch(err) {}
-  </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116734954-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-116734954-1');
-  </script>
-
-  </tr></td></table></body>
+    </footer>
+  </body>
 </html>
-<!--  -->
+
