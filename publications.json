@@ -28,15 +28,15 @@
         "links": [
             {
                 "name": "Paper",
-                "link": ""
+                "link": "https://github.com/Akaneqwq/360DVD/blob/main/__assets__/360DVD.pdf"
             },
             {
                 "name": "Project",
-                "link": ""
+                "link": "https://akaneqwq.github.io/360DVD/"
             },
             {
                 "name": "Code",
-                "link": ""
+                "link": "https://github.com/Akaneqwq/360DVD"
             }
         ],
         "desc": "We propose a controllable panorama video generation pipeline named 360-Degree Video Diffusion model (360DVD) for generating panoramic videos based on the given prompts and motion conditions."
