@@ -10,11 +10,11 @@ publications.forEach((publication) => {
   if (publication.img) {
     result += `<source srcset="/media/${publication.img.replace(
       /\.(png|jpe?g)/i,
-      ".avif"
+      ".avif",
     )}" type="image/avif" />\n`;
     result += `<source srcset="/media/${publication.img.replace(
       /\.(png|jpe?g)/i,
-      ".webp"
+      ".webp",
     )}" type="image/webp" />\n`;
     result += `<img src="/media/${publication.img}" width="180" height="140" alt="${publication.title}" />\n`;
   }
@@ -27,10 +27,16 @@ publications.forEach((publication) => {
     if (index !== 0) {
       result += ",\n";
     }
+    if (author.self) {
+      result += "<b>";
+    }
     if (author.link) {
       result += `<a href="${author.link}" target="_blank">${author.name}</a>`;
     } else {
       result += `${author.name}`;
+    }
+    if (author.self) {
+      result += "</b>";
     }
   });
   if (publication.withEqualContribution) {
