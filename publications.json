@@ -1,5 +1,47 @@
 [
     {
+        "img": "360DVD.png",
+        "title": "360DVD: Controllable Panorama Video Generation with 360-Degree Video Diffusion Model",
+        "authors": [
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Weiqi Li",
+                "link": "https://github.com/lwq20020127/"
+            },
+            {
+                "name": "Chong Mou",
+                "link": "https://github.com/MC-E"
+            },
+            {
+                "name": "Xinhua Cheng",
+                "link": "https://cxh0519.github.io/"
+            },
+            {
+                "name": "Jian Zhang",
+                "link": "https://jianzhang.tech/"
+            }
+        ],
+        "venue": "arXiv",
+        "links": [
+            {
+                "name": "Paper",
+                "link": ""
+            },
+            {
+                "name": "Project",
+                "link": ""
+            },
+            {
+                "name": "Code",
+                "link": ""
+            }
+        ],
+        "desc": "We propose a controllable panorama video generation pipeline named 360-Degree Video Diffusion model (360DVD) for generating panoramic videos based on the given prompts and motion conditions."
+    },
+    {
         "img": "NTIRE2023.png",
         "title": "NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results",
         "authors": [
