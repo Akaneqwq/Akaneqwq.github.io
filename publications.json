@@ -38,7 +38,7 @@
                 "link": "https://openreview.net/pdf?id=BQbfGk3JPY"
             }
         ],
-        "desc": "We propose an automatic poster creation framework, which first utilizes the capacity of Large Language Model (LLM) to extract user intention from provided prompts and generate the aligned background."
+        "desc": "We propose an automatic poster creation framework, utilizing the capacity of LLM to extract user intention from prompts and generating the aligned background."
     },
     {
         "img": "360DVD.png",
@@ -80,7 +80,7 @@
                 "link": "https://github.com/Akaneqwq/360DVD"
             }
         ],
-        "desc": "We propose a controllable panorama video generation pipeline named 360-Degree Video Diffusion model (360DVD) for generating panoramic videos based on the given prompts and motion conditions."
+        "desc": "We propose a controllable panorama video generation pipeline named 360DVD for generating panoramic videos based on the prompts and motion conditions."
     },
     {
         "img": "NTIRE2023.png",
