@@ -1,5 +1,46 @@
 [
     {
+        "img": "Prompt2Poster.png",
+        "title": "Prompt2Poster: Automatically Artistic Chinese Poster Creation from Prompt Only",
+        "authors": [
+            {
+                "name": "Shaodong Wang",
+                "link": "https://github.com/shaodong233"
+            },
+            {
+                "name": "Yunyang Ge",
+                "link": "https://github.com/yunyangge"
+            },
+            {
+                "name": "Liuhan Chen",
+                "link": "https://github.com/LiuhanChen-github"
+            },
+            {
+                "name": "Haiyang Zhou"
+            },
+            {
+                "name": "Qian Wang",
+                "self": true
+            },
+            {
+                "name": "Xinhua Cheng",
+                "link": "https://cxh0519.github.io/"
+            },
+            {
+                "name": "Li Yuan",
+                "link": "https://yuanli2333.github.io/"
+            }
+        ],
+        "venue": "ACM MM, 2024",
+        "links": [
+            {
+                "name": "Paper",
+                "link": "https://openreview.net/pdf?id=BQbfGk3JPY"
+            }
+        ],
+        "desc": "We propose an automatic poster creation framework, which first utilizes the capacity of Large Language Model (LLM) to extract user intention from provided prompts and generate the aligned background."
+    },
+    {
         "img": "360DVD.png",
         "title": "360DVD: Controllable Panorama Video Generation with 360-Degree Video Diffusion Model",
         "authors": [
