@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/2ec1ec3ca1661378.css","style"]
+2:T5d8,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"zh","mode":"fixed","fixedLocale":"zh","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'zh';
+      root.setAttribute('data-locale', 'zh');
+    }
+  0:{"P":null,"b":"L8q2AHs-feuucLOZCMz-U","p":"","c":["","awards",""],"i":false,"f":[[["",{"children":[["slug","awards","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2ec1ec3ca1661378.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"zh","mode":"fixed","fixedLocale":"zh","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"}],"siteTitle":"Qian Wang","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"经历","type":"page","target":"experience","href":"/experience"},{"title":"奖项","type":"page","target":"awards","href":"/awards"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"}]},"siteTitleByLocale":{"zh":"王茜","en":"Qian Wang"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"August 27, 2026","lastUpdatedByLocale":{"zh":"2026年8月27日","en":"August 27, 2026"},"defaultLocale":"zh"}]]}]}]}]]}]]}],{"children":[["slug","awards","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","MXkZGzaHEK8Hte7Xo2hY7",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["461","static/chunks/461-a9a5d7b05a71d978.js","178","static/chunks/178-595a94b9af1e67b5.js","748","static/chunks/748-fbe5a7ed9ca5d887.js","182","static/chunks/app/%5Bslug%5D/page-fd4af1cee8af8baf.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+9:["$","$L17",null,{"dataByLocale":{"zh":{"type":"card","config":{"type":"card","title":"奖项","description":"奖学金、荣誉称号与竞赛获奖。","items":[{"title":"北京大学罗岳华奖学金","subtitle":"北京大学","date":"博士阶段","content":"博士阶段荣誉。"},{"title":"北京大学学习优秀奖","subtitle":"北京大学","date":"博士阶段","content":"博士阶段荣誉。"},{"title":"国家励志奖学金","subtitle":"教育部","date":"本科阶段","content":"本科阶段荣誉。"},{"title":"四川大学综合一等奖学金","subtitle":"四川大学","date":"本科阶段","content":"本科阶段荣誉。"},{"title":"好未来奖学金","subtitle":"好未来 / 四川大学","date":"本科阶段","content":"本科阶段荣誉。"},{"title":"计科之星","subtitle":"四川大学计算机学院","date":"本科阶段","content":"本科阶段荣誉。"},{"title":"四川大学优秀学生干部","subtitle":"四川大学","date":"本科阶段","content":"本科阶段荣誉。"},{"title":"中国大学生计算机设计大赛","subtitle":"省赛一等奖 · 国赛三等奖","date":"2021.05","content":"全国性计算机设计竞赛。"},{"title":"中国软件杯大学生软件设计大赛","subtitle":"省赛一等奖 · 国赛三等奖","date":"2020.11","content":"全国性大学生软件设计竞赛。"},{"title":"中国大学生程序设计竞赛（CCPC）女生专场","subtitle":"银奖","date":"2020.10","content":"CCPC 女生专场。"},{"title":"蓝桥杯个人赛","subtitle":"C/C++ 省赛一等奖 · 国赛三等奖","date":"2020.10","content":"程序设计个人赛。"},{"title":"美国（国际）大学生数学建模竞赛","subtitle":"H 奖（Honorable Mention）","date":"2020.04","content":"MCM/ICM。"}]}},"en":{"type":"card","config":{"type":"card","title":"Awards","description":"Selected scholarships, honors, and competition awards.","items":[{"title":"Luo Yuehua Scholarship","subtitle":"Peking University","date":"PhD","content":"Awarded during Ph.D. studies."},{"title":"Academic Excellence Award","subtitle":"Peking University","date":"PhD","content":"Awarded during Ph.D. studies."},{"title":"National Endeavor Scholarship","subtitle":"Ministry of Education of China","date":"B.E.","content":"Awarded during undergraduate studies at Sichuan University."},{"title":"First-class Comprehensive Scholarship","subtitle":"Sichuan University","date":"B.E.","content":"Awarded during undergraduate studies."},{"title":"TAL Scholarship","subtitle":"TAL Education / Sichuan University","date":"B.E.","content":"Undergraduate scholarship."},{"title":"Star of Computer Science","subtitle":"College of Computer Science, Sichuan University","date":"B.E.","content":"Undergraduate honor."},{"title":"Outstanding Student Cadre","subtitle":"Sichuan University","date":"B.E.","content":"Undergraduate honor."},{"title":"China Collegiate Computing Contest","subtitle":"Provincial First Prize · National Third Prize","date":"2021.05","content":"National contest in computer design."},{"title":"China Software Cup","subtitle":"Provincial First Prize · National Third Prize","date":"2020.11","content":"National undergraduate software design contest."},{"title":"CCPC Women's Contest","subtitle":"Silver Medal","date":"2020.10","content":"China Collegiate Programming Contest, Women's Division."},{"title":"Blue Bridge Cup","subtitle":"C/C++ Provincial First Prize · National Third Prize","date":"2020.10","content":"Individual programming contest."},{"title":"Mathematical Contest in Modeling","subtitle":"Honorable Mention","date":"2020.04","content":"MCM/ICM."}]}}},"defaultLocale":"zh"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Awards | Qian Wang"}],["$","meta","1",{"name":"description","content":"Selected scholarships, honors, and competition awards."}],["$","meta","2",{"name":"author","content":"Qian Wang"}],["$","meta","3",{"name":"keywords","content":"Qian Wang,PhD,Research,Peking University"}],["$","meta","4",{"name":"creator","content":"Qian Wang"}],["$","meta","5",{"name":"publisher","content":"Qian Wang"}],["$","meta","6",{"property":"og:title","content":"Qian Wang"}],["$","meta","7",{"property":"og:description","content":"PhD student at Peking University."}],["$","meta","8",{"property":"og:site_name","content":"Qian Wang's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"zh_CN"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Qian Wang"}],["$","meta","13",{"name":"twitter:description","content":"PhD student at Peking University."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}

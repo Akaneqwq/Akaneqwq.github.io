@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-759c56eef4841e9e.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/2ec1ec3ca1661378.css","style"]
+2:T5d8,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"zh","mode":"fixed","fixedLocale":"zh","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'zh';
+      root.setAttribute('data-locale', 'zh');
+    }
+  0:{"P":null,"b":"L8q2AHs-feuucLOZCMz-U","p":"","c":["","experience",""],"i":false,"f":[[["",{"children":[["slug","experience","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2ec1ec3ca1661378.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"zh","mode":"fixed","fixedLocale":"zh","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"}],"siteTitle":"Qian Wang","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"经历","type":"page","target":"experience","href":"/experience"},{"title":"奖项","type":"page","target":"awards","href":"/awards"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"}]},"siteTitleByLocale":{"zh":"王茜","en":"Qian Wang"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"August 27, 2026","lastUpdatedByLocale":{"zh":"2026年8月27日","en":"August 27, 2026"},"defaultLocale":"zh"}]]}]}]}]]}]]}],{"children":[["slug","experience","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","jVBews00bkTgTvvzWjBib",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["461","static/chunks/461-a9a5d7b05a71d978.js","178","static/chunks/178-595a94b9af1e67b5.js","748","static/chunks/748-fbe5a7ed9ca5d887.js","182","static/chunks/app/%5Bslug%5D/page-fd4af1cee8af8baf.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+9:["$","$L17",null,{"dataByLocale":{"zh":{"type":"card","config":{"type":"card","title":"经历","description":"","items":[{"title":"视觉算法实习生","subtitle":"腾讯 WXG · 视觉技术团队","date":"2026.01 – 2026.08","content":"负责微信自研文生图模型及小微助手文生图模块的 Reward Model 研发，覆盖偏好数据构建、细粒度评价体系、Reward Model 训练与蒸馏，以及生成模型 RL 后训练全链路。\n\n- 提出 **Pair2Point** 两阶段训练范式：基于 Qwen3-VL-8B-Instruct 全参数 SFT 训练成对偏好推理模型，再蒸馏为高效单点打分模型；最终在 3 个独立 Benchmark 上取得 SOTA 准确率。\n- 围绕 Reward Model 构建高质量偏好数据：筛选 2 万条代表性提示词、3.5 万对候选图像，设计覆盖图文一致性、视觉质量等八维度 Rubrics，得到 2 万对高置信度偏好数据及 7 万条单点多维评分数据。\n- 将 Pointwise Reward 应用于 Flow-GRPO、DiffusionNFT 等强化学习算法，完成 Flux.1-dev、Z-Image、Qwen-Image 及微信自研生图模型的 RL 后训练，在 GenAI-Bench、UniGenBench、PickScore、HPSv2、HPSv3 等指标上取得 SOTA，方案已落地微信自研生图模型及小微助手。\n","tags":["文生图","奖励模型","后训练"]},{"title":"视觉算法实习生","subtitle":"兔展智能","date":"2024.07 – 2025.12","content":"面向横向课题及公司产品开展计算机视觉与生成式 AI 算法研发，围绕姿态控制、图像编辑、视频理解与内容生成等方向改进开源视觉生成模型，并结合 MLLM 构建端到端应用。\n\n- 研发骨架驱动的人物视频生成方案，实现姿态条件控制与拜年视频自动生成。\n- 基于 Image Inpainting 与重打光构建商品图智能生成与光照编辑能力。\n- 搭建融合视频拆条、视觉内容理解、文本复写与生成的短视频克隆混剪平台。\n","tags":["视频生成","图像编辑","多模态大模型"]}]}},"en":{"type":"card","config":{"type":"card","title":"Experience","description":"","items":[{"title":"Visual Algorithm Intern","subtitle":"Tencent WXG","date":"2026.01 – 2026.08","content":"Led reward-model research for WeChat's in-house text-to-image model and the Xiaowei assistant T2I module, covering preference data, evaluation, training, distillation, and RL post-training.\n\n- Proposed **Pair2Point**, a two-stage reward paradigm: train a pairwise reasoning model with full-parameter SFT on Qwen3-VL-8B-Instruct, then distill it into an efficient pointwise scorer. The pointwise model reached SOTA accuracy on 3 independent benchmarks.\n- Built a high-quality preference dataset: 20K clustered prompts, 35K candidate pairs, 8-dimensional rubrics, and 20K high-confidence preference pairs plus 70K pointwise multi-dimensional scores.\n- Applied the pointwise reward to Flow-GRPO and DiffusionNFT for RL post-training of Flux.1-dev, Z-Image, Qwen-Image, and WeChat's in-house generator, achieving SOTA on GenAI-Bench, UniGenBench, PickScore, HPSv2, and HPSv3.\n","tags":["Text-to-Image","Reward Model","Post-Training"]},{"title":"Visual Algorithm Intern","subtitle":"RabbitPre","date":"2024.07 – 2025.12","content":"Worked on computer vision and generative AI for sponsored projects and products, spanning pose control, image editing, video understanding, and content generation.\n\n- Built a skeleton-driven character video generation pipeline with pose control and automatic New Year video synthesis.\n- Developed product-image generation and relighting with inpainting, supporting multi-scene commercial visuals.\n- Built a short-video clone and remix platform that combines video parsing, visual understanding, text rewriting, and generation.\n","tags":["Video Generation","Image Editing","MLLM"]}]}}},"defaultLocale":"zh"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Experience | Qian Wang"}],["$","meta","1",{"name":"author","content":"Qian Wang"}],["$","meta","2",{"name":"keywords","content":"Qian Wang,PhD,Research,Peking University"}],["$","meta","3",{"name":"creator","content":"Qian Wang"}],["$","meta","4",{"name":"publisher","content":"Qian Wang"}],["$","meta","5",{"property":"og:title","content":"Qian Wang"}],["$","meta","6",{"property":"og:description","content":"PhD student at Peking University."}],["$","meta","7",{"property":"og:site_name","content":"Qian Wang's Academic Website"}],["$","meta","8",{"property":"og:locale","content":"zh_CN"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Qian Wang"}],["$","meta","12",{"name":"twitter:description","content":"PhD student at Peking University."}],["$","link","13",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}
