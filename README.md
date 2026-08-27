@@ -1,4 +1,33 @@
-# akaneqwq.github.io
-The source code of [Qian Wang's public academic website](https://akaneqwq.github.io/). Feel free to clone this code for your own personal use.
+# Akaneqwq's Homepage
 
-This template was proposed by [Jon Barron's public academic website](https://jonbarron.info/). [@Pcrab](https://github.com/Pcrab) has made some improvements in layout and image loading methods. We are very grateful for their contribution!
+This repository hosts the statically exported build of [PRISM](https://github.com/Akaneqwq/PRISM) — a personal academic homepage built with Next.js.
+
+The live site is deployed via GitHub Pages at [https://akaneqwq.github.io/](https://akaneqwq.github.io/).
+
+## Update the site
+
+1. In the PRISM project, update content and build:
+
+   ```bash
+   npm run build
+   ```
+
+2. Copy the generated `out/` directory into this repository:
+
+   ```bash
+   cp -R path/to/PRISM/out/. .
+   ```
+
+3. Make sure `.nojekyll` exists (it prevents GitHub Pages from running Jekyll, which would otherwise ignore the `_next` directory and break the page):
+
+   ```bash
+   touch .nojekyll
+   ```
+
+4. Commit and push:
+
+   ```bash
+   git add -A && git commit -m "deploy: update site" && git push origin master
+   ```
+
+GitHub Pages picks up changes on the `master` branch automatically within a couple of minutes.
