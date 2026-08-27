@@ -30,16 +30,16 @@
       }
       header {
         font-size: 15px;
-        min-height: 273px;
+        min-height: 341px;
         padding: 20px;
         margin: 8px 20px;
-        padding-right: 220px;
+        padding-right: 270px;
         position: relative;
       }
       header > picture {
         position: absolute;
-        width: 200px;
-        height: 273px;
+        width: 250px;
+        height: 341px;
         right: 0;
         top: 0;
         bottom: 0;
@@ -69,6 +69,33 @@
         padding: 20px;
         margin: 0;
         font-weight: 400;
+      }
+      h2 {
+        font-size: 20px;
+        padding: 10px 20px 0 20px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .section-item {
+        padding: 12px 20px;
+        font-size: 15px;
+      }
+      .section-item p {
+        margin: 0;
+      }
+      .section-item .title {
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+      .section-item .venue {
+        margin-bottom: 5px;
+      }
+      .section-item ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      .section-item li {
+        margin-bottom: 4px;
       }
       .publication {
         padding: 20px;
@@ -130,11 +157,11 @@
       <div class="self-intro-name">Qian Wang (王茜)</div>
       <picture>
         <source srcset="/media/IDPhoto.avif" type="image/avif" />
-        <img width="200" height="273" src="/media/IDPhoto.JPG" alt="ID Photo" />
+        <img width="250" height="341" src="/media/IDPhoto.JPG" alt="ID Photo" />
       </picture>
       <div>
         <p>
-          I am a master student at the School of Electronic and Computer Engineering,
+          I am a Ph.D. student (expected to graduate in 2027) at the School of Electronic and Computer Engineering,
           <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a>
           Shenzhen Graduate School, advised by
           <a href="https://jianzhang.tech/" target="_blank">Prof. Jian Zhang</a>.
@@ -142,7 +169,7 @@
           <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>, in 2022.
         </p>
         <p>
-          My research interest includes image restoration, image/video generation and image/video editing.
+          My research interest includes image and video generation, covering image generation models, video generation models, and world models. My publications have received over 800 citations with an h-index of 10.
         </p>
         <div class="self-intro-links">
           <a href="mailto:qianwang@stu.pku.edu.cn">Email</a>
@@ -156,37 +183,68 @@
     <main>
       <h1>Publications</h1>
 
+      <h2>First-author Publications</h2>
+
       <div class="publication">
-        <picture>
-        <source srcset="/media/Prompt2Poster.avif" type="image/avif" />
-        <source srcset="/media/Prompt2Poster.webp" type="image/webp" />
-        <img src="/media/Prompt2Poster.png" width="180" height="140" alt="Prompt2Poster: Automatically Artistic Chinese Poster Creation from Prompt Only" />
-        </picture>
-        <div>
-        <p class="title">Prompt2Poster: Automatically Artistic Chinese Poster Creation from Prompt Only</p>
-        <div class="authors">
-        <a href="https://github.com/shaodong233" target="_blank">Shaodong Wang</a>,
-        <a href="https://github.com/yunyangge" target="_blank">Yunyang Ge</a>,
-        <a href="https://github.com/LiuhanChen-github" target="_blank">Liuhan Chen</a>,
-        Haiyang Zhou,
-        <b>Qian Wang</b>,
-        <a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng</a>,
-        <a href="https://yuanli2333.github.io/" target="_blank">Li Yuan</a></div>
-        <p class="venue">ACM MM, 2024</p>
-        <div class="links">
-        <span class="link">
-        <a href="https://openreview.net/pdf?id=BQbfGk3JPY" target="_blank">
-        Paper
-        </a>
-        </span>
-        </div>
-        <p class="desc">
-        We propose an automatic poster creation framework, utilizing the capacity of LLM to extract user intention from prompts and generating the aligned background.
-        </p>
-        </div>
-        </div>
-        
-        <div class="publication">
+      <div>
+      <p class="title">Pair2Point: Distilling Pairwise Reasoning into Pointwise Rewards for High-Quality Text-to-Image Generation</p>
+      <div class="authors">
+      <b>Qian Wang</b>,
+      Xinhang Leng,
+      Yinan Li,
+      Sujie Hu,
+      Huaisong Zhang,
+      Chen Li,
+      <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+      <p class="venue">AAAI, 2027 (under review)</p>
+      <div class="links">
+      </div>
+      <p class="desc">
+      We propose Pair2Point, a two-stage training paradigm for text-to-image reward models. It first trains a pairwise reasoning model and then distills it into an efficient pointwise scoring model, addressing the low efficiency of pairwise comparisons and the instability of pointwise scoring. We also construct a corresponding benchmark, a preference dataset, and a pointwise dataset.
+      </p>
+      </div>
+      </div>
+      
+      <div class="publication">
+      <div>
+      <p class="title">AgentKE: Agentic Knowledge Editing for Diffusion Transformers</p>
+      <div class="authors">
+      <b>Qian Wang</b>,
+      Shuyu Wang,
+      Zhile Guan,
+      <a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng</a>,
+      Xiandong Meng,
+      <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+      <p class="venue">AAAI, 2027 (under review)</p>
+      <div class="links">
+      </div>
+      <p class="desc">
+      We propose AgentKE, a knowledge editing framework for text-to-image diffusion transformers. It leverages a VLM to decompose natural language intents and generate corresponding protection sets, then edits the parameters of linear projection layers in the null space of the protection sets to update or modify knowledge, with automatic reflection to improve the editing results.
+      </p>
+      </div>
+      </div>
+      
+      <div class="publication">
+      <div>
+      <p class="title">DualDiff3D: Dual Structure-Appearance Diffusion Priors for Reliability-Enhanced 3D Gaussian Splatting</p>
+      <div class="authors">
+      <b>Qian Wang</b>,
+      Yu Wang,
+      <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+      <a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng</a>,
+      Xiandong Meng,
+      Ronggang Wang,
+      <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+      <p class="venue">ECCV, 2026</p>
+      <div class="links">
+      </div>
+      <p class="desc">
+      We propose DualDiff3D, which employs two diffusion models to extract structure priors from low-quality rendered novel views and appearance priors from reference views, together with a reliability-enhanced Render-Refine-Optimize loop to improve 3D Gaussian Splatting reconstruction and novel view rendering from sparse views.
+      </p>
+      </div>
+      </div>
+      
+      <div class="publication">
         <picture>
         <source srcset="/media/360DVD.avif" type="image/avif" />
         <source srcset="/media/360DVD.webp" type="image/webp" />
@@ -224,30 +282,100 @@
         </div>
         </div>
         
-        <div class="publication">
+      <h2>Co-authored Publications</h2>
+
+      <div class="publication">
+      <div>
+      <p class="title">OmniDrag: Enabling Motion Control for Omnidirectional Image-to-Video Generation</p>
+      <div class="authors">
+      <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+      Shijie Zhao,
+      <a href="https://github.com/MC-E" target="_blank">Chong Mou</a>,
+      Xuhan Sheng,
+      Zhenyu Zhang,
+      <b>Qian Wang</b>,
+      Junlin Li,
+      Li Zhang,
+      <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+      <p class="venue">IJCV, 2026</p>
+      <div class="links">
+      <span class="link">
+      <a href="https://doi.org/10.1007/s11263-025-02629-7" target="_blank">
+      Paper
+      </a>
+      </span>
+      <span class="link">
+      <a href="https://arxiv.org/abs/2412.09623" target="_blank">
+      arXiv
+      </a>
+      </span>
+      <span class="link">
+      <a href="https://lwq20020127.github.io/OmniDrag" target="_blank">
+      Project
+      </a>
+      </span>
+      </div>
+      <p class="desc">
+      We propose OmniDrag, which enables drag-based motion control for omnidirectional image-to-video generation, allowing controllable creation of immersive and dynamic 360-degree videos.
+      </p>
+      </div>
+      </div>
+      
+      <div class="publication">
+      <div>
+      <p class="title">AlignedGen: Aligning Style Across Generated Images</p>
+      <div class="authors">
+      Jiexuan Zhang,
+      Yiheng Du,
+      <b>Qian Wang</b>,
+      <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+      Yu Gu,
+      <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+      <p class="venue">NeurIPS, 2025</p>
+      <div class="links">
+      <span class="link">
+      <a href="https://arxiv.org/abs/2509.17088" target="_blank">
+      Paper
+      </a>
+      </span>
+      <span class="link">
+      <a href="https://github.com/Jiexuanz/AlignedGen" target="_blank">
+      Code
+      </a>
+      </span>
+      </div>
+      <p class="desc">
+      We propose AlignedGen, a training-free style-aligned image generation method for DiT models, enhancing style consistency across a set of generated images.
+      </p>
+      </div>
+      </div>
+      
+      <div class="publication">
         <picture>
-        <source srcset="/media/NTIRE2023.avif" type="image/avif" />
-        <source srcset="/media/NTIRE2023.webp" type="image/webp" />
-        <img src="/media/NTIRE2023.png" width="180" height="140" alt="NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results" />
+        <source srcset="/media/Prompt2Poster.avif" type="image/avif" />
+        <source srcset="/media/Prompt2Poster.webp" type="image/webp" />
+        <img src="/media/Prompt2Poster.png" width="180" height="140" alt="Prompt2Poster: Automatically Artistic Chinese Poster Creation from Prompt Only" />
         </picture>
         <div>
-        <p class="title">NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results</p>
+        <p class="title">Prompt2Poster: Automatically Artistic Chinese Poster Creation from Prompt Only</p>
         <div class="authors">
-        Mingdeng Cao,
-        et al.,
+        <a href="https://github.com/shaodong233" target="_blank">Shaodong Wang</a>,
+        <a href="https://github.com/yunyangge" target="_blank">Yunyang Ge</a>,
+        <a href="https://github.com/LiuhanChen-github" target="_blank">Liuhan Chen</a>,
+        Haiyang Zhou,
         <b>Qian Wang</b>,
-        et al.,
-        Bingchun Luo</div>
-        <p class="venue">CVPR Workshop, 2023</p>
+        <a href="https://cxh0519.github.io/" target="_blank">Xinhua Cheng</a>,
+        <a href="https://yuanli2333.github.io/" target="_blank">Li Yuan</a></div>
+        <p class="venue">ACM MM, 2024</p>
         <div class="links">
         <span class="link">
-        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Cao_NTIRE_2023_Challenge_on_360deg_Omnidirectional_Image_and_Video_Super-Resolution_CVPRW_2023_paper.html" target="_blank">
+        <a href="https://openreview.net/pdf?id=BQbfGk3JPY" target="_blank">
         Paper
         </a>
         </span>
         </div>
         <p class="desc">
-        We develop a spatial-temporal two-stage model, wherein the first stage is a 4x image super-resolution network, and the second stage is a 4x video super-resolution network.
+        We propose an automatic poster creation framework, utilizing the capacity of LLM to extract user intention from prompts and generating the aligned background.
         </p>
         </div>
         </div>
@@ -276,6 +404,34 @@
         </div>
         <p class="desc">
         We introduce metric learing for leveraging 2D network-inferred labels to obtain discriminating feature fields, leading to 3D segmentation and editing results.
+        </p>
+        </div>
+        </div>
+        
+        <div class="publication">
+        <picture>
+        <source srcset="/media/NTIRE2023.avif" type="image/avif" />
+        <source srcset="/media/NTIRE2023.webp" type="image/webp" />
+        <img src="/media/NTIRE2023.png" width="180" height="140" alt="NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results" />
+        </picture>
+        <div>
+        <p class="title">NTIRE 2023 Challenge on 360deg Omnidirectional Image and Video Super-Resolution: Datasets, Methods and Results</p>
+        <div class="authors">
+        Mingdeng Cao,
+        et al.,
+        <b>Qian Wang</b>,
+        et al.,
+        Bingchun Luo</div>
+        <p class="venue">CVPR Workshop, 2023</p>
+        <div class="links">
+        <span class="link">
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Cao_NTIRE_2023_Challenge_on_360deg_Omnidirectional_Image_and_Video_Super-Resolution_CVPRW_2023_paper.html" target="_blank">
+        Paper
+        </a>
+        </span>
+        </div>
+        <p class="desc">
+        We develop a spatial-temporal two-stage model, wherein the first stage is a 4x image super-resolution network, and the second stage is a 4x video super-resolution network.
         </p>
         </div>
         </div>
@@ -372,12 +528,51 @@
         </div>
         </div>
                 
+      <h1>Education</h1>
+      <div class="section-item">
+        <p class="title">Ph.D. in Computer Science</p>
+        <p><a href="https://www.pku.edu.cn/" target="_blank">Peking University</a> (Shenzhen Graduate School), 2022 - 2027 (expected)</p>
+        <p class="venue">Advisor: Prof. <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a> | GPA: 3.77/4.00</p>
+      </div>
+      <div class="section-item">
+        <p class="title">B.E. in Computer Science (Zhu Feng Program)</p>
+        <p><a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>, 2018 - 2022</p>
+        <p class="venue">Advisor: Prof. Qijun Zhao | GPA: 3.76/4.00</p>
+      </div>
+
+      <h1>Experience</h1>
+      <div class="section-item">
+        <p class="title">Visual Algorithm Intern</p>
+        <p><a href="https://www.tencent.com/" target="_blank">Tencent</a> (WXG - Technical Architecture Department, Vision Team), Shenzhen, Jan 2026 - Aug 2026</p>
+        <p class="desc">
+        Led the Reward Model development for WeChat's in-house text-to-image model and the text-to-image module of Xiaowei Assistant, covering preference data construction, fine-grained evaluation rubric design, reward model training and distillation, and the full pipeline of RL post-training for generation models.
+        </p>
+      </div>
+      <div class="section-item">
+        <p class="title">Visual Algorithm Intern</p>
+        <p>Tuzhan AI (F-round, advisor's partner company), Shenzhen, Jul 2024 - Dec 2025</p>
+        <p class="desc">
+        Worked on visual and generative AI algorithms for industry-academia collaboration projects and product lines, covering pose control, image editing, video understanding, and content generation; optimized open-source visual generation models and built end-to-end AI applications with MLLMs.
+        </p>
+      </div>
+
+      <h1>Awards</h1>
+      <div class="section-item">
+        <ul>
+          <li>Luo Yuehua Scholarship; Learning Excellence Award, Peking University (Ph.D.)</li>
+          <li>National Endeavor Scholarship; Comprehensive First-Class Scholarship; Tal Education Scholarship; Star of Computer Science; Outstanding Student Cadre, Sichuan University (B.E.)</li>
+          <li>First Prize (Provincial) &amp; Third Prize (National), China Collegiate Computer Design Contest, May 2021</li>
+          <li>First Prize (Provincial) &amp; Third Prize (National), China Software Cup, Nov 2020</li>
+          <li>Silver Award, China Collegiate Programming Contest (CCPC) - Women's, Oct 2020</li>
+          <li>First Prize (Provincial) &amp; Third Prize (National), Lanqiao Cup C/C++ Programming, Oct 2020</li>
+          <li>Honorable Mention, Mathematical Contest in Modeling, Apr 2020</li>
+        </ul>
+      </div>
     </main>
     <footer>
       Template is adapted from
       <a href="https://jonbarron.info/" target="_blank">jonbarron.info</a><br />
-      Last updated: Aug 2024
+      Last updated: Aug 2026
     </footer>
   </body>
 </html>
-
